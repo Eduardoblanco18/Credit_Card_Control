@@ -2,9 +2,9 @@ package br.com.CreditCard.shop;
 
 public class Items {
     private String name;
-    private float price;
+    private double price;
 
-    public Items(String name, float price) {
+    public Items(String name, double price) {
         this.name = name;
         this.price = price;
     }
@@ -13,7 +13,7 @@ public class Items {
         return name;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
