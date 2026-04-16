@@ -27,4 +27,14 @@ public class CreditCard {
         this.balance = limit;
         this.items = new ArrayList<>();
     }
+
+    public boolean payWithCredit(Items item) {
+        if (this.balance >= item.getPrice()){
+            this.balance -= item.getPrice();
+            this.items.add(item);
+            return true;
+        }
+
+        return false;
+    }
 }
