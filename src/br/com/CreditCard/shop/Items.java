@@ -19,6 +19,6 @@ public class Items {
 
     @Override
     public String toString() {
-        return "Compra: nome = " + this.name + ", valor= " + this.price;
+        return this.name + " - " + this.price + "\n";
     }
 }
