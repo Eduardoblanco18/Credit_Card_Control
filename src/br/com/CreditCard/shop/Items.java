@@ -4,19 +4,21 @@ public class Items {
     private String name;
     private float price;
 
-    public String getName() {
-        return this.name;
+    public Items(String name, float price) {
+        this.name = name;
+        this.price = price;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     public float getPrice() {
-        return this.price;
+        return price;
     }
 
-    public void setPrice(float price) {
-        this.price = price;
+    @Override
+    public String toString() {
+        return "Compra: nome = " + this.name + ", valor= " + this.price;
     }
 }
