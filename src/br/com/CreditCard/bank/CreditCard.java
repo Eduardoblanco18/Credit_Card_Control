@@ -1,23 +1,30 @@
 package br.com.CreditCard.bank;
 
-public class CreditCard {
-    private float balance;
+import br.com.CreditCard.shop.Items;
 
-    public float getBalance() {
+import java.util.ArrayList;
+import java.util.List;
+
+public class CreditCard {
+    private double balance;
+    private double limit;
+    private List<Items> items;
+
+    public List<Items> getItems() {
+        return items;
+    }
+
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(float balance) {
-        this.balance = balance;
+    public double getLimit() {
+        return limit;
     }
 
-    public boolean payWithCredit(float price){
-        if (this.balance >= price) {
-            this.balance -= price;
-            return true;
-        } else {
-            System.out.println("SALDO INSUFICIENTE!");
-            return false;
-        }
+    public CreditCard(double limit) {
+        this.limit = limit;
+        this.balance = limit;
+        this.items = new ArrayList<>();
     }
 }
