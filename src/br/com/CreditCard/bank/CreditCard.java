@@ -11,13 +11,13 @@ public class CreditCard {
         this.balance = balance;
     }
 
-    public int payWithCredit(float price){
+    public boolean payWithCredit(float price){
         if (this.balance >= price) {
             this.balance -= price;
-            return 1;
+            return true;
         } else {
             System.out.println("SALDO INSUFICIENTE!");
-            return 0;
+            return false;
         }
     }
 }

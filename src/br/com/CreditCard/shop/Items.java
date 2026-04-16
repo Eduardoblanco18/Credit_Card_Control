@@ -2,21 +2,21 @@ package br.com.CreditCard.shop;
 
 public class Items {
     private String name;
-    private String Price;
+    private float price;
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getPrice() {
-        return Price;
+    public float getPrice() {
+        return this.price;
     }
 
-    public void setPrice(String price) {
-        Price = price;
+    public void setPrice(float price) {
+        this.price = price;
     }
 }
